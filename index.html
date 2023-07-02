@@ -54,10 +54,12 @@
       
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <button class="btnclose" data-modal-close>x</button>
-            <h2>Deje sus datos, nos contactaremos con usted</h2>
-              
             <form class="modal-form">
+                <svg class="btnclose" data-modal-close>
+                  <use xlink:href="./images/icons.svg#icon-cerrar"></use>
+                </svg>
+              <h2>Deje sus datos, nos contactaremos con usted</h2>
+            
               <label for="input-name">Nombre
                 <div class="input-icon-relative">
                   <input class="modal-form-input" type="text" name="name" id="input-name" required></input>
@@ -86,14 +88,14 @@
               </label>
               
               <label>Comentarios
-                  <textarea type="text" name="input-coment" id="input-coment" placeholder="Introduzca el texto"></textarea>
+                  <textarea class="textar-comen" type="text" name="input-coment" id="input-coment" placeholder="Introduzca el texto"></textarea>
               </label>
               
-              <div class="text-check">
-                <label>
-                  <input type="checkbox" name="check-acuerdo" value="check-acuerdo" required/>
-                  Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones
-                </label>
+              <div class="cont-check">
+                <svg class="text-check">
+                  <use class="ico-check" xlink:href="./images/icons.svg#icon-check" ></use>
+                </svg>
+                <p>Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones</p>
               </div>
               
               <div class="cont-btnmodal">
