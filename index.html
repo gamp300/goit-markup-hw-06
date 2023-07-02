@@ -57,41 +57,49 @@
             <button class="btnclose" data-modal-close>x</button>
             <h2>Deje sus datos, nos contactaremos con usted</h2>
               
-              <form class="modal-form">
-                <label for="input-name">Nombre
-                  <div class="input-icon-relative">
-                    <input class="modal-form-input" type="text" name="name" id="input-name" required></input>
-                    <svg class="modal-form-svg">
-                      <use xlink:href="./images/icons.svg#icon-persona"></use>
-                    </svg>
-                  </div>
-                </label>
+            <form class="modal-form">
+              <label for="input-name">Nombre
+                <div class="input-icon-relative">
+                  <input class="modal-form-input" type="text" name="name" id="input-name" required></input>
+                  <svg class="modal-form-svg">
+                    <use xlink:href="./images/icons.svg#icon-persona"></use>
+                  </svg>
+                </div>
+              </label>
 
-                <label for="input-name">Télefono
-                  <div class="input-icon-relative">
-                    <input class="modal-form-input" type="text" name="tel" id="input-tel" required></input>
-                    <svg class="modal-form-svg">
-                      <use xlink:href="./images/icons.svg#icon-tel"></use>
-                    </svg>
-                  </div>
-                </label>
-
-                <label for="input-name">E-mail
-                  <div class="input-icon-relative">
-                    <input class="modal-form-input" type="text" name="correo" id="input-correo" required></input>
-                    <svg class="modal-form-svg">
-                      <use xlink:href="./images/icons.svg#icon-correo"></use>
-                    </svg>
-                  </div>
-                </label>
+              <label for="input-tel">Teléfono
+                <div class="input-icon-relative">
+                  <input class="modal-form-input" type="tel" name="tel" id="input-tel" required ></input>          
+                  <svg class="modal-form-svg">
+                    <use xlink:href="./images/icons.svg#icon-tel"></use>
+                  </svg>
+                </div>
+              </label>
                 
-                <label>Comentarios
-                  <div>
-                    <input></input>
-                  </div>
+              <label for="input-correo">E-mail
+                <div class="input-icon-relative">
+                  <input class="modal-form-input" type="email" name="email" id="input-email" required></input>
+                  <svg class="modal-form-svg">
+                    <use xlink:href="./images/icons.svg#icon-correo"></use>
+                  </svg>
+                </div>
+              </label>
+              
+              <label>Comentarios
+                  <textarea type="text" name="input-coment" id="input-coment" placeholder="Introduzca el texto"></textarea>
+              </label>
+              
+              <div class="text-check">
+                <label>
+                  <input type="checkbox" name="check-acuerdo" value="check-acuerdo" required/>
+                  Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones
                 </label>
-                <button class="btnestudio" type="submit">Enviar</button>
-              </form>
+              </div>
+              
+              <div class="cont-btnmodal">
+                <button class="btnmodal" type="submit">Enviar</button>
+              </div>
+            </form>
           </div>
         </div>
     </section >
@@ -362,9 +370,21 @@
               <use xlink:href="./images/icons.svg#icon-linkedin"></use>
             </svg>
           </a>
-        </address>
       </div>
-    </section>
+      
+      <div class="footer-div1">
+        <h6 class="titlefoot">SUSCRÍBASE AL BOLETÍN INFORMATIVO</h6>
+        <div class="inp-butt">
+          <input class="inputfoot" type="email" name="email1" id="input-email1" placeholder="Correo Electrónico"></input>
+          <button class="btnsuscrib" type="submit">Suscríbase
+            <svg class="icon-enviar">
+              <use xlink:href="./images/icons.svg#icon-enviar"></use>
+            </svg>          
+          </button>
+        </div>
+      </div>
+        </address>
+      </section>
     </div>
   </footer>
   <script src="./js/modal.js"></script>
