@@ -526,15 +526,13 @@ a:isvited {
 .footer-div1 {
     width: 550px;
     display: inline-block;
-    margin: 50px 3px;
+    margin: 65px 3px;
 }
 
 .titlefoot {
     color: rgb(255, 255, 255);
     font-size: 14px;
-    margin-top: 18px;
-    margin-bottom: 10px;
-    margin-right: 2px;
+    font-weight: 700;
 }
 
 .inputfoot {
@@ -548,6 +546,7 @@ a:isvited {
     border-radius: 4px;
     padding-left: 15px;
     margin-right: 20px;
+    margin-top: 10px;
 }
 
 .inp-butt{
@@ -564,6 +563,7 @@ a:isvited {
     padding: 10px 20px;
     border: 2px solid #2196F3;
     border-radius: 4px;
+    margin-top: 10px;
 }
 
 .icon-enviar {
