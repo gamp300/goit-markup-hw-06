@@ -688,12 +688,8 @@ a:isvited {
     width: 18px;
     height: 18px;
     position: absolute;
-    top: 12px;
+    top: 35px;
     left: 13px;
-}
-
-.modal-form-svg:hover{
-    fill: #2196f3;
 }
 
 .input-icon-relative{
