@@ -78,7 +78,7 @@
                 </div>
               </label>
                 
-              <label for="input-correo">E-mail
+              <label for="input-email">E-mail
                 <div class="input-icon-relative">
                   <input class="modal-form-input" type="email" name="email" id="input-email" required></input>
                   <svg class="modal-form-svg">
@@ -91,11 +91,12 @@
                   <textarea class="textar-comen" type="text" name="input-coment" id="input-coment" placeholder="Introduzca el texto"></textarea>
               </label>
               
-              <div class="cont-check">
-                <svg class="text-check">
-                  <use class="ico-check" xlink:href="./images/icons.svg#icon-check" ></use>
-                </svg>
-                <p>Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones</p>
+              <div class="checkbox">
+                <input type="checkbox" id="agree-checkbox" class="checkbox-input">
+                <label for="agree-checkbox" class="checkbox-label">
+                  Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones
+                  <span class="check-icon"></span>
+                </label>
               </div>
               
               <div class="cont-btnmodal">
@@ -377,13 +378,14 @@
       
       <form class="footer-div1">
         <label class="titlefoot">SUSCRÍBASE AL BOLETÍN INFORMATIVO</label>
-        <label class="inp-butt">
-          <input class="inputfoot" type="email" name="email1" id="input-email1" placeholder="Correo Electrónico" required></input>
-          <button class="btnsuscrib" type="submit">Suscríbase
-            <svg class="icon-enviar">
-              <use xlink:href="./images/icons.svg#icon-enviar"></use>
-            </svg>          
-          </button>
+          <div class="inp-butt">
+            <input class="inputfoot" type="email" name="email1" id="input-email1" placeholder="Correo Electrónico" required></input>
+            <button class="btnsuscrib" type="submit">Suscríbase
+              <svg class="icon-enviar">
+                <use xlink:href="./images/icons.svg#icon-enviar"></use>
+              </svg>          
+            </button>
+          </div>
         </label>
       </form>
       </section>

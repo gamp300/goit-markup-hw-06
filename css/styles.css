@@ -633,44 +633,34 @@ a:isvited {
     border: 2px solid #2196F3;
 }
 
-.cont-check{
+.checkbox {
     display: flex;
-    padding: 0px 10px;
-    padding-bottom: 0;
-    
+    align-items: center;
 }
 
-.cont-check p{
-    padding: 0 10px;
-    border: 0;
-    margin: 0;
-}
-
-.text-check{
-    width: 15px;
-    height: 12px;
-    margin-top: 7px;
-    fill: #F5F4FA;
-    background: white;
-    border: 2px solid black;
-}
-
-.text-check:hover,
-.text-check:focus,
-.text-check:active{
-    width: 15px;
-    height: 12px;
-    margin-top: 7px;
+.checkbox-label {
+    position: relative;
+    padding-left: 10px;
     cursor: pointer;
-    background-color: #2196f3;
-    fill: #2196f3;
-    border: 2px solid #2196f3;
 }
 
-.ico-check{
-    
-    padding: 0;
-     border: 1px solid red;
+.check-icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/icons.svg#icon-check");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.checkbox-input:checked+.checkbox-label .check-icon {
+    opacity: 1;
 }
 
 .cont-btnmodal{
@@ -744,3 +734,4 @@ a:isvited {
             /*Fin MODAL*/
 //////////////////////////////////////////////////////*/
             /*Inicio */
+
