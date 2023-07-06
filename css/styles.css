@@ -628,35 +628,35 @@ a:link {
     border: 2px solid #2196F3;
 }
 
-.checkbox {
-    display: flex;
-    align-items: center;
-}
-
-.checkbox-label {
-    position: relative;
-    padding-left: 10px;
+.checkbox-label::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    border-radius: 2px;
     cursor: pointer;
 }
 
-.check-icon {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    background-image: url("../images/icons.svg#icon-check");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    opacity: 1;
-    pointer-events: none;
+.checkbox-input:checked + .checkbox-label::before {
+    background-image: url("../images/icon-check.svg");
+    background-origin: border-box;
+    border-color: #2196F3;
 }
 
-.checkbox-input:checked+.checkbox-label .check-icon {
-    opacity: 1;
+.checkbox-input:focus + .checkbox-label::before {
+    border: 1px solid #2196F3;
 }
+
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip-path: inset(50%);
+}
+
 
 .cont-btnmodal{
     text-align: center;
